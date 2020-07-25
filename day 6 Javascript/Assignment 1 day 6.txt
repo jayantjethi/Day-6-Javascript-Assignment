@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Background Color</title>
+</head>
+<body>
+    <h2>Hello There </h2>
+<script type="text/javascript">
+    var i = 0;
+var arr = ["red" , "blue" ,"green" ,"yellow"];
+function myFunction()
+{       
+    
+        document.body.style.backgroundColor = arr[i];
+        i++;
+        if(i>arr.length)
+        {
+         i=0;   
+        } 
+        window.setTimeout("myFunction()" , 5000);     
+} 
+myFunction();
+
+</script>
+</body>
+</html>
